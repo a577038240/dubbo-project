@@ -29,7 +29,7 @@ public class UserController {
      * 针对方法级别做超时时间和容错等设置
      */
 
-    @DubboReference(timeout = 1000, retries = 2, cluster = "failover",parameters = {"registerUser.retries","0","registerUser.cluster","failfast","registerUser.timeout","10000"})
+    @DubboReference(timeout = 1000, retries = 2,filter = "traceLog",cluster = "failover",parameters = {"registerUser.retries","0","registerUser.cluster","failfast","registerUser.timeout","10000"})
     private UserService userService;
 
     @PostMapping("/register")
