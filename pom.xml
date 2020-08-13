@@ -11,6 +11,7 @@
         <module>dubbo-user-api</module>
         <module>user-provider</module>
         <module>user-consumer</module>
+        <module>dubbo-order-provider</module>
     </modules>
     <packaging>pom</packaging>
     <name>dubbo-project</name>

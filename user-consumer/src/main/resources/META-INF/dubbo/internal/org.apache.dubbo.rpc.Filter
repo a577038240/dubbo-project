@@ -1,0 +1,1 @@
+traceLog=com.dubbo.consumer.filter.TraceLogFilter
